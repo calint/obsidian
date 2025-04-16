@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "table of contents.md",
+                "file": "rust/Rust.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "table of contents"
+              "title": "Rust"
             }
           }
         ]
@@ -170,14 +170,14 @@
   },
   "active": "3e05d127c4a2593d",
   "lastOpenFiles": [
-    "c++/C++.md",
-    "rust/Rust.md",
+    "tangnano9k/Tang Nano 9K.md",
     "unity/Unity.md",
     "table of contents.md",
+    "rust/Rust.md",
+    "c++/C++.md",
     "c++",
     "unity",
     "tangnano9k",
-    "tangnano9k/Tang Nano 9K.md",
     "rust",
     "Embedded.md",
     "Game tutorials.md",

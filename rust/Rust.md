@@ -34,14 +34,14 @@ https://docs.rs/glam/latest/glam/
 https://docs.rs/glam/latest/glam/
 
 ## Local Manuals
-file:///home/c/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/share/doc/rust/html/core/index.html
-file:///home/c/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/share/doc/rust/html/book/index.html
+ file:///home/c/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/share/doc/rust/html/core/index.html
+ file:///home/c/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/share/doc/rust/html/book/index.html
 
 ## Lifetimes
-https://www.youtube.com/watch?v=HwupNf9iCJk
-*Interior Mutability*
-Cell: mutate reference of copy-able content
-RefCell: borrow checker at runtime, may panic, in multi-threaded application blocks
-RwLock: threads safe, one writer many readers
-Arc: threads safe reference count
-Mutex: simplified RwLock without concept of lock for read or write
+* https://www.youtube.com/watch?v=HwupNf9iCJk
+* *Interior Mutability*
+* Cell: mutate reference of copy-able content
+* RefCell: borrow checker at runtime, may panic, in multi-threaded application blocks
+* RwLock: threads safe, one writer many readers
+* Arc: threads safe reference count
+* Mutex: simplified RwLock without concept of lock for read or write
