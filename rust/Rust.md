@@ -67,16 +67,16 @@ Concurrency in Rust - Message Passing
 ## Lifetimes
 https://www.youtube.com/watch?v=juIINGuZyBc  
 Rust Lifetimes Finally Explained!
-* Regarding functions with input and output references: Rust looks at the arguments to a function and their lifetimes. The return of a reference must be based on the input arguments references lifetimes (since that is the only input to a function). At the call site, rust knows the lifetimes of the arguments and infers validity of the returned reference(s) by selecting the shortest lifetime of the arguments. In single argument reference and return references, Rust implies the same lifetime to both being the same. If an argument is a reference to self, all outputs receive the lifetime of self. (What if an input reference goes out of scope before self?)
-* Regarding structs that contain refs: lifetime of refs must be valid at least as long as the lifetime of the struct instance.
+* Functions with input/output references: Rust analyzes argument lifetimes to determine return reference validity. Since functions only receive inputs, return references must derive from input reference lifetimes. At call sites, Rust infers return reference validity by selecting the shortest input lifetime. For single reference arguments returning references, Rust implicitly assigns identical lifetimes. When self is referenced, all outputs inherit self's lifetime. (The question remains: what happens if an input reference's scope terminates before self's?)
+* Regarding structs that contain refs: Lifetime of refs must be valid at least as long as the lifetime of the struct instance.
 
 https://www.youtube.com/watch?v=HwupNf9iCJk  
 Interior Mutability  
-* Cell: mutate reference of copy-able content  
-* RefCell: borrow checker at runtime, may panic, in multi-threaded application blocks  
-* RwLock: threads safe, one writer many readers  
-* Arc: threads safe reference count  
-* Mutex: simplified RwLock without concept of lock for read or write  
+* Cell: not thread-safe, mutate reference of copy-able content  
+* RefCell: not thread-safe, borrow checker at runtime, may panic
+* RwLock: thread-safe, one writer many readers  
+* Arc: thread-safe, reference count  
+* Mutex: thread-safe, simplified RwLock without concept of lock for multiple readers or one write  
 
 https://www.youtube.com/watch?v=6fwDwJodJrg  
 Rust's second most complicated feature explained  
@@ -85,7 +85,7 @@ Rust's second most complicated feature explained
 # Closures
 https://www.youtube.com/watch?v=rnxutl7t1hI  
 Advanced Function and Closures in Rust
-* Fn: captures variables as inmutable
+* Fn: captures variables as immutable
 * FnMut: captures variables as mutable
 * FnOnce: transfers ownership of variables
 
@@ -113,7 +113,7 @@ Smart Pointers in Rust - The Deref Trait
 
 https://www.youtube.com/watch?v=RPWZcTYBS4k  
 Smart Pointers in Rust - The Drop Trait
-* implement `Drop` trait to hook when rust drops a value
+* implement `Drop` trait to hook when Rust drops a value
 * explicit call to drop not allowed i.e. `v.drop()`, use `drop(v)`
 
 https://www.youtube.com/watch?v=M9Owp3iLigg  
@@ -151,8 +151,8 @@ Deploy your Rust project in 20 minutes
 
 # Etc
 * "orphan rules": cannot implement a foreign trait of a foreign type
-* `mem::take(...)`
-* Box(X) can automatically be converted to &X when passed as function arguments
-* receive array slice instead of &Vec and function argument works for arrays also
+* `mem::take(...)`: move a value out of a mutable reference, even if the type `T` is not `Copy`
+* `Box(X)` can automatically be converted to `&X` when passed as function arguments
+* receive array slice instead of `&Vec` and function argument works for arrays also
 * function arguments `impl Printer` vs `dyn Printer`: `impl` is same as generic argument `fn f<T>(x: &T) where T: Printer`. `impl` often used in return type meaning "something that implements xxx". `impl` is  a more modern way where it can be applied.
 

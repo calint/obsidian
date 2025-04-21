@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ide/Visual Code.md",
+                "file": "rust/Rust.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Visual Code"
+              "title": "Rust"
             }
           }
         ]
@@ -170,9 +170,9 @@
   },
   "active": "746218f7013a10cf",
   "lastOpenFiles": [
-    "c++/C++.md",
-    "ide/Visual Code.md",
     "table of contents.md",
+    "ide/Visual Code.md",
+    "c++/C++.md",
     "ide",
     "rust/Rust.md",
     "unity/Unity.md",
