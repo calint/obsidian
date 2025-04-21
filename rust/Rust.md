@@ -67,8 +67,8 @@ Concurrency in Rust - Message Passing
 ## Lifetimes
 https://www.youtube.com/watch?v=juIINGuZyBc  
 Rust Lifetimes Finally Explained!
-* Regarding functions with input and output references: rust looks at the arguments to a function and their lifetimes. The return of a reference must be based on the input arguments references lifetimes (since that is the only input to a function). At the call site, rust knows the lifetimes of the arguments and infers validity of the returned reference(s) by selecting the shortest lifetime of the arguments. In single argument reference and return reference, rust implies the same lifetime to both. If an argument is a reference to self, all outputs receive the lifetime of self. (what if an input reference goes out of scope before self)
-* Regarding structs that contain refs: lifetime of refs must be at least as long as the lifetime of the struct instance.
+* Regarding functions with input and output references: Rust looks at the arguments to a function and their lifetimes. The return of a reference must be based on the input arguments references lifetimes (since that is the only input to a function). At the call site, rust knows the lifetimes of the arguments and infers validity of the returned reference(s) by selecting the shortest lifetime of the arguments. In single argument reference and return references, Rust implies the same lifetime to both being the same. If an argument is a reference to self, all outputs receive the lifetime of self. (What if an input reference goes out of scope before self?)
+* Regarding structs that contain refs: lifetime of refs must be valid at least as long as the lifetime of the struct instance.
 
 https://www.youtube.com/watch?v=HwupNf9iCJk  
 Interior Mutability  
@@ -91,7 +91,8 @@ Advanced Function and Closures in Rust
 
 # Traits
 https://www.youtube.com/watch?v=Nzclc6MswaI  
-* 5 traits your types should implement in a public crate: `Debug, Clone, Default, PartialEq, Send & Sync`
+5 traits your types must implement
+* in a public crate: `Debug, Clone, Default, PartialEq, Send & Sync`
 	* `Send`: type safe to send between  threads  
 	* `Sync`: Safe to be shared via threads through references  
 	* `Send + Sync` are "autotraits" implemented unless type contains a field that is not:
@@ -126,6 +127,11 @@ Smart Pointers in Rust - Reference Counting
 * `iter_mut()` mutable references
 * `into_iter()` takes ownership
 
+# Dynamic  Dispatch
+https://www.youtube.com/watch?v=wU8hQvU8aKM  
+Two Ways To Do Dynamic Dispatch
+* Rust vs C++ way of doing dynamic dispatch
+
 # Books
 * https://doc.rust-lang.org/rust-by-example  
 * https://doc.rust-lang.org/book/
@@ -139,8 +145,14 @@ Smart Pointers in Rust - Reference Counting
 * https://docs.rs/glam/latest/glam/  
 * https://letsgetrusty.kartra.com/page/XDk8  
 
+# Docker
+https://www.youtube.com/watch?v=_gMzg77Qjm0  
+Deploy your Rust project in 20 minutes  
+
 # Etc
 * "orphan rules": cannot implement a foreign trait of a foreign type
 * `mem::take(...)`
 * Box(X) can automatically be converted to &X when passed as function arguments
 * receive array slice instead of &Vec and function argument works for arrays also
+* function arguments `impl Printer` vs `dyn Printer`: `impl` is same as generic argument `fn f<T>(x: &T) where T: Printer`. `impl` often used in return type meaning "something that implements xxx". `impl` is  a more modern way where it can be applied.
+
