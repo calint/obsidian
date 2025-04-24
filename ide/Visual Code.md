@@ -14,7 +14,17 @@
 		},
 		"*.mutable": {
 			"underline": false,
-		}
+		},
+		"property": {
+			"fontStyle": "italic",
+			"foreground": "#8fc9d9"
+		},
+		"namespace": {
+			"foreground": "#67a0b0"
+		},
+		"enumMember": {
+			"foreground": "#60c07e"
+		},
 	}
 },
 ```

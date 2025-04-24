@@ -41,6 +41,7 @@ https://interrupt.memfault.com/blog/zero-to-main-rust-1
 https://github.com/ch32-rs/ch32-hal  
 https://docs.rust-embedded.org/book/  
 https://embassy.dev/  
+https://www.youtube.com/watch?v=MxUSSunT-yk&list=PLxM2CWwQlzBu9-UHsaxnQpc0YweGwKwn3  on Raspberry PI  
 
 ## Kernel
 https://os.phil-opp.com/minimal-rust-kernel/  
@@ -131,6 +132,9 @@ https://www.youtube.com/watch?v=wU8hQvU8aKM
 **Two Ways To Do Dynamic Dispatch**
 * Rust vs C++ way of doing dynamic dispatch
 
+# Macros
+https://www.youtube.com/watch?v=SMCRQj9Hbx8  
+**Comprehending Proc Macros**  
 # Books
 * https://doc.rust-lang.org/rust-by-example  
 * https://doc.rust-lang.org/book/
@@ -138,7 +142,8 @@ https://www.youtube.com/watch?v=wU8hQvU8aKM
 * https://rust-cli.github.io/book/
 * https://rustwasm.github.io/docs/book/
 * https://doc.rust-lang.org/cargo/
-* https://rust-for-rustaceans.com/  
+* https://rust-for-rustaceans.com/
+* https://github.com/sger/RustBooks
 
 ## Portals
 * https://docs.rs/glam/latest/glam/  
@@ -147,6 +152,11 @@ https://www.youtube.com/watch?v=wU8hQvU8aKM
 # Docker
 https://www.youtube.com/watch?v=_gMzg77Qjm0  
 **Deploy your Rust project in 20 minutes**
+
+# ADT
+Algebraic Data Types
+*TypeA | TypeB: "sum" => Enum
+TypeA + TypeB: "product" => struct
 
 # Etc
 * "orphan rules": cannot implement a foreign trait of a foreign type
