@@ -1,5 +1,5 @@
 `h,j,k,l`: move cursor
-`ctrl+u/d`: move cursor half a screen up/down
+`CTRL+u/d`: move cursor half a screen up/down
 `zz`: center screen on cursor
 `M`: move cursor to middle of screen
 `i`: insert before the cursor
@@ -20,58 +20,86 @@
 `ge`: jump backwards to the end of a word
 `gE`: jump backwards to the end of a word (words can contain punctuation)
 `%`: jump to to matching character (default supported pairs: '()', '{}', '[]'
-`5gg` or `5G`: jump to line 5
 `}`: jump to next paragraph
 `{`: jump to previous paragraph
+`5gg` or `5G`: jump to line 5
+`4k`: example jump up 4 lines. works with `h,j,k,l`
+
+`CTRL+o`: jump back in previous cursor positions
+`CTRL+i`: jump forward in previous cursor positions
 
 `C`: delete rest of line and enter edit
 `cc` or `S`: delete line and enter edit
 
 `v`: enter visual (select) mode
-`ESC` or `ctrl+C`: exist visual mode
+ESC or `CTRL+C`: exist visual mode
 `V`: enter visual (select) mode and select line
+
+(in visual mode normal movement can be used to modify selection)
 
 In visual (select) mode
 	`i`  inside   or   `a` including delimiter
 		`w`: current word
-		`(` or `b`:  (...)
+		`W`: current word including punctuation
+		`s`: current sentence
+		`p`: current paragraph
+		`"`: "..."
+		`(` or `b`: (...)
 		`{` or `B`: {...}
-		`"`:  "..."
+		`[`: [...]
+		`<`: <...>
 	`d`: delete selection
+	`c`: delete selection and insert mode
 
 `o`: move to other end of selected text
 
+`r`: replace single character
+
+`dd`: delete current line
+`d2d`: delete 2 lines etc
+`D`: delete to end of line
+`x`: delete current character
+
 `d`: delete   or   `c`: delete and edit
-	`d`: delete current line
-	`2d`: delete 2 lines etc
-	`w`: delete to next word
-	`b`: delete to beginning of word
-
-	`i`  inside   or   `a` including delimiter
+	`w`: to end of current word
+	`b`: to beginning of current word
+	`$`: to end of line
+	`i` inside   or   `a` including delimiter
 		`w`: current word
-		`(` or `b`:  (...)
+		`W`: current word including punctuation
+		`s`: current sentence
+		`p`: current paragraph
+		`"`: "..."
+		`(` or `b`: (...)
 		`{` or `B`: {...}
-		`"`:  "..."
-
-	`is`: delete current sentence
-	`ip`: delete current paragraph
+		`[`: [...]
+		`<`: <...>
 	
-`c`: delete selection and insert mode
-
-`J`: merge current line with line below with a space in=between
+`J`: merge current line with line below with a space in-between
 `gJ`: merge current line with line below
 
+`yy`: yank line
+`y2y`: yank 2 lines etc
+
 `y`: yank (copy) selection
-	`y`: yank line
-	`$`: yank to end of line
+	`w`: word
+	`$`: to end of line
 	`i` for inside of   or   `a` including delimiter
+		`w`: current word
+		`W`: current word including punctuation
+		`s`: current sentence
+		`p`: current paragraph
 		`"`: "..."
-		`(`: (...)
-		`{`: {...}
+		`(` or `b`: (...)
+		`{` or `B`: {...}
+		`[`: [...]
+		`<`: <...>
+
 `p`: paste yanked after cursor
 `P`: paste yanked before cursor
+
 `u`: undo last change
-`ctrl+r`: redo change
+`CTRL+r`: redo change
 
 `gd`: jump to definition (example function name to declaration)
 
@@ -82,6 +110,7 @@ In visual (select) mode
 `;` : repeat previous f, t, F or T movement
 `,`: repeat previous f, t, F or T movement, backwards
 
+`*`: search for current word
 `/`: start search forward, press ENTER to jump to occurrence
 `?`: start search backwards
 `n`: next search result
@@ -95,4 +124,4 @@ In visual (select) mode
 `ZQ` or `:q`: close without saving
 `ZZ`: save and close
 
-todo: registers, marks, macro
+todo: registers, marks, macro, search and replace
