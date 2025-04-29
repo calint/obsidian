@@ -4,3 +4,4 @@
 * [[C++]]
 * [[Visual Code]]
 * [[Vim Motions]]
+* [[lazyvim]]

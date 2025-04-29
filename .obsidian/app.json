@@ -1,5 +1,6 @@
 {
   "alwaysUpdateLinks": true,
   "showLineNumber": true,
-  "strictLineBreaks": false
+  "strictLineBreaks": false,
+  "vimMode": true
 }
