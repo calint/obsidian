@@ -170,9 +170,9 @@
   },
   "active": "c84a7a214594c1c3",
   "lastOpenFiles": [
-    "table of contents.md",
-    "lazyvim.md",
     "vim/Vim Motions.md",
+    "lazyvim.md",
+    "table of contents.md",
     "vim",
     "ide/Visual Code.md",
     "rust/Rust.md",
