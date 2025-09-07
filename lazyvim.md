@@ -66,4 +66,4 @@ Useful commands:
  * `s` flash search
  * `<leader>sS` show types in workspace
 * auto-completions move between object `C-n`/`C-p` select using `enter` or `tab`. jump to next argument using `tab`
-* 
+* `K` while in a symbol to get type information 

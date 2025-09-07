@@ -35,11 +35,16 @@
 `CTRL+o`: jump back in previous cursor positions  
 `CTRL+i`: jump forward in previous cursor positions  
 `CTRL+t`: jump to the file/code you were editing before the last tag jump  
+`ALT+j/k`: move selection or line up/down
 
 **Moving Screen**
 `zz`: center screen on cursor  
 `CTRL+y`: scroll up without moving cursor  
 `CTRL+e`: scroll down without moving cursor  
+
+**Moving between buffers**
+`H`: previous buffer
+`L`: next buffer
 
 **Insert**
 `i`: insert before the cursor  
@@ -75,8 +80,13 @@ ESC or `CTRL+C`: exits visual mode
 		`{` or `B`: {...}  
 		`[`: [...]  
 		`<`: <...>  
+		`a`:function argument
 	`d`: delete selection  
 	`c`: delete selection and insert mode  
+
+**Change**
+`cia`: change next argument
+   etc much more
 
 `o`: move to other end of selected text  
 
@@ -152,3 +162,6 @@ todo: registers, marks, macro, search regexp grouping swapping
 `qa`: start recording macro a  
 `q`: finish recording macro  
 `@a`: run macro a
+
+**Lazy VIM**
+* `/` activate search bar in explorer
