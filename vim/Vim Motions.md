@@ -1,6 +1,3 @@
-**Moving Cursor**
-`h,j,k,l`: move cursor  
-`4k`: example jump up 4 lines. works with `h,j,k,l`  
 `CTRL+u/d`: move cursor half a screen up/down  
 `CTRL+b/f`: move full screen up/down  
 `zt`: move cursor to top of screen  
@@ -36,6 +33,9 @@
 `CTRL+i`: jump forward in previous cursor positions  
 `CTRL+t`: jump to the file/code you were editing before the last tag jump  
 `ALT+j/k`: move selection or line up/down
+`u`: undo
+`CTRL+r`: undo undo
+`*`: search for word under cursor
 
 **Moving Screen**
 `zz`: center screen on cursor  
@@ -153,8 +153,6 @@ in "/" `CTRL+r 0`: paste register value 0 in search
 
 `:reg`: display registers
 
-todo: registers, marks, macro, search regexp grouping swapping
-
 `CTRL+v`: enter visual mode in vertical mode where several lines can be edited  
 `SHIFT+i` or `SHIFT+a`: multi-line edit
 
@@ -163,5 +161,6 @@ todo: registers, marks, macro, search regexp grouping swapping
 `q`: finish recording macro  
 `@a`: run macro a
 
-**Lazy VIM**
-* `/` activate search bar in explorer
+**Windows**
+`CTRL+j/k/h/l`: go to window below/above/left/right
+`<leader>+wd`: delete window

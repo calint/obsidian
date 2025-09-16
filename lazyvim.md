@@ -60,10 +60,19 @@ Useful commands:
  * `C+h,j,k,l` in split window jump to buffer left, down, up, right
  * `gr` shows references to symbol
  * `A+j,k` move selected lines down or up
- * `gc` comment out selected block
- * in explorer `i` to focus on search field
+ * `gc` comment/uncomment out selected block
+ * in explorer `i` or `/` to focus on search field
  * `cia` deletes function argument and enters edit mode, then `esc` and `cina` to repeat for next argument
  * `s` flash search
  * `<leader>sS` show types in workspace
 * auto-completions move between object `C-n`/`C-p` select using `enter` or `tab`. jump to next argument using `tab`
-* `K` while in a symbol to get type information 
+
+**Search**
+`<leader>/`: start search
+`<leader>sR`: to return to same search
+`CTRL+up/down`: navigate previous searchers
+`TAB`: to select entries then `CTRL+q` to send to quick fix list
+`CTRL+q`: to send all results to quick list
+
+`<leader>sk`: key mappings
+`<leader><backspace>`: for quick help of keys that don't start with `<leader>`
