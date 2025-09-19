@@ -3,5 +3,5 @@
 * [[Tang Nano 9K]]
 * [[C++]]
 * [[Visual Code]]
-* [[Vim Motions]]
-* [[lazyvim]]
+* [[vim]]
+ 

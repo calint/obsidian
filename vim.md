@@ -1,0 +1,2 @@
+[[vim motions]]
+[[lazyvim]]
