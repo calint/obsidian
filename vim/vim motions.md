@@ -102,6 +102,8 @@ ESC or `CTRL+C`: exits visual mode
 `d`: delete   or   `c`: delete and edit  
 *then same selection motions as visual mode `i` and `a`, no cursor movement*  
 
+`"_d`: delete without putting selection in clipboard
+
 `yy` or `Y`: yank line (note: `p` or `P` following `yy` pastes the line after or before the current line no matter where the cursor is)  
 `2yy`: yank 2 lines etc  
 
@@ -163,4 +165,5 @@ in "/" `CTRL+r 0`: paste register value 0 in search
 
 **Windows**
 `CTRL+j/k/h/l`: go to window below/above/left/right
-`<leader>+wd`: delete window
+`<leader>wd`: delete window
+`<CTRL+w+q>`: delete window

@@ -1,4 +1,3 @@
-The best of: https://www.lazyvim.org/keymap
 
 | General       |                            |              |
 | ------------- | -------------------------- | ------------ |
@@ -16,8 +15,6 @@ The best of: https://www.lazyvim.org/keymap
 | `<leader>3`   | Harpoon to File 3          | **n**        |
 | `<leader>4`   | Harpoon to File 4          | **n**        |
 | `<leader>5`   | Harpoon to File 5          | **n**        |
-| `gco`         | Add Comment Below          | **n**        |
-| `gcO`         | Add Comment Above          | **n**        |
 | `<leader>us`  | Toggle Spelling            | **n**        |
 | `<leader>uA`  | Toggle Tabline             | **n**        |
 | `<leader>uh`  | Toggle Inlay Hints         | **n**        |
@@ -33,8 +30,6 @@ The best of: https://www.lazyvim.org/keymap
 | `gK`          | Signature Help             | **n**        |
 | `<c-k>`       | Signature Help             | **i**        |
 | `<leader>ca`  | Code Action                | **n**, **v** |
-| `<leader>cc`  | Run Codelens               | **n**, **v** |
-| `<leader>cC`  | Refresh & Display Codelens | **n**        |
 | `<leader>cR`  | Rename File                | **n**        |
 | `<leader>cr`  | Rename                     | **n**        |
 | `<leader>cA`  | Source Action              | **n**        |
@@ -48,24 +43,6 @@ The best of: https://www.lazyvim.org/keymap
 | `<leader>uC`  | Colorschemes               | **n**        |
 |               |                            |              |
 
-Useful commands: 
-* `LazyExtras`
-* `LspInfo`
-
- Tips:
- * after `K` for lsp pop-up press `K` again to enter pop-up window and scroll. exit with `q`
- * navigate autocomplete options with `C-n` and `C-p`
- * `]a` to jump to start of next function argument then `C+<space>` to select the argument followed by `c` to delete it and enter edit mode
- * `S+h` and `S+l` for previous and next buffer
- * `C+h,j,k,l` in split window jump to buffer left, down, up, right
- * `gr` shows references to symbol
- * `A+j,k` move selected lines down or up
- * `gc` comment/uncomment out selected block
- * in explorer `i` or `/` to focus on search field
- * `cia` deletes function argument and enters edit mode, then `esc` and `cina` to repeat for next argument
- * `s` flash search
- * `<leader>sS` show types in workspace
-* auto-completions move between object `C-n`/`C-p` select using `enter` or `tab`. jump to next argument using `tab`
 
 **Search**
 `<leader>/`: start search
@@ -73,6 +50,34 @@ Useful commands:
 `CTRL+up/down`: navigate previous searchers
 `TAB`: to select entries then `CTRL+q` to send to quick fix list
 `CTRL+q`: to send all results to quick list
+`]m`: jump to next function
+`[m`: jump to previous function
 
 `<leader>sk`: key mappings
 `<leader><backspace>`: for quick help of keys that don't start with `<leader>`
+
+`>`: indent selection
+`<`: un-indent selection
+
+**Spelling**
+`z=`: suggestion
+`zg`: add to good words
+
+**Tabs**
+`[B`: move tab left
+`]B`: move tab right
+
+**Diagnostice**
+`]d`: next diagnostics line
+`[d`: previous diagnostics line
+
+**how to execute multi-line lua script**
+`<leader>.`: scratch buffer
+`:%lua`: execute buffer
+
+**folding**
+`za`: fold/unfold code
+
+**search and replace in multiple files**
+`<leader>+sr`
+
