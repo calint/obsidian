@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "vim/lazyvim.md",
+                "file": "vim/vim motions.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "lazyvim"
+              "title": "vim motions"
             }
           }
         ]
@@ -171,17 +171,17 @@
   },
   "active": "d3241ca709fd3ee4",
   "lastOpenFiles": [
-    "vim/vim motions.md",
     "vim/lazyvim.md",
-    "table of contents.md",
     "vim.md",
+    "table of contents.md",
+    "unity/Unity.md",
+    "c++/C++.md",
+    "ide/Visual Code.md",
     "tangnano9k/Tang Nano 9K.md",
     "rust/Rust.md",
-    "ide/Visual Code.md",
-    "c++/C++.md",
+    "vim/vim motions.md",
     "vim",
     "ide",
-    "unity/Unity.md",
     "c++",
     "unity",
     "tangnano9k",
