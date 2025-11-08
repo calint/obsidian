@@ -13,7 +13,7 @@
 `b`: jump one word backwards  
 `B`: jump one word backwards including non-whitespace  
 `e`: jump to end of word  
-`fx`: jump to next occurrence of character x in line   
+`fx`: jump to next occurrence of character x in line  
 `tx`: jump to before next occurrence of character x in line  
 `Fx`: jump to the previous occurrence of character x  
 `Tx`: jump to after previous occurrence of character x  
@@ -40,7 +40,7 @@
 **Moving Screen**
 `zz`: center screen on cursor  
 `CTRL+y`: scroll up without moving cursor  
-`CTRL+e`: scroll down without moving cursor  
+`CTRL+e`: scroll down without moving cursor
 
 **Moving between buffers**
 `H`: previous buffer
@@ -56,7 +56,7 @@
 `s`: delete current character and enter edit
 
 `C`: delete rest of line and enter edit  
-`cc` or `S`: delete line and enter edit  
+`cc` or `S`: delete line and enter edit
 
 **In Insert Mode**
 `CTRL+w`: delete word before cursor
@@ -64,31 +64,31 @@
 `CTRL+r {register}`: insert register content
 
 `v`: enter visual (select) mode  
-ESC or `CTRL+C`: exits visual mode  
-`V`: enter visual mode and select line  
+`ESC` or `CTRL+C`: exits visual mode  
+`V`: enter visual mode and select line
 
 (in visual mode normal movement can be used to modify selection)
 
 **In visual (select) mode**  
-*Moving cursor commands apply.*  
-	`i` inside   or   `a` around  
-		`s`: current sentence  
-		`p`: current paragraph  
-		`"`: "..."  
-		`'`: '...'  
-		`(` or `b`: (...)  
-		`{` or `B`: {...}  
-		`[`: [...]  
-		`<`: <...>  
-		`a`:function argument
-	`d`: delete selection  
-	`c`: delete selection and insert mode  
+_Moving cursor commands apply._  
+ `i` inside or `a` around  
+ `s`: current sentence  
+ `p`: current paragraph  
+ `"`: "..."  
+ `'`: '...'  
+ `(` or `b`: (...)  
+ `{` or `B`: {...}  
+ `[`: [...]  
+ `<`: <...>  
+ `a`:function argument  
+ `d`: delete selection  
+ `c`: delete selection and insert mode
 
 **Change**
-`cia`: change next argument
-   etc much more
+`cina`: change next argument  
+ etc much more
 
-`o`: move to other end of selected text  
+`o`: move to other end of selected text
 
 `r`: replace single character  
 `~`: change character case
@@ -99,33 +99,34 @@ ESC or `CTRL+C`: exits visual mode
 `x`: delete current character  
 `X`: delete previous character
 
-`d`: delete   or   `c`: delete and edit  
-*then same selection motions as visual mode `i` and `a`, no cursor movement*  
+`d`: delete or `c`: delete and edit  
+_then same selection motions as visual mode `i` and `a`, no cursor movement_
 
 `"_d`: delete without putting selection in clipboard
 
-`yy` or `Y`: yank line (note: `p` or `P` following `yy` pastes the line after or before the current line no matter where the cursor is)  
-`2yy`: yank 2 lines etc  
+`yy` or `Y`: yank line (note: `p` or `P` following `yy` pastes the line after or
+before the current line no matter where the cursor is)  
+`2yy`: yank 2 lines etc
 
 `y`: yank (copy) selection  
-*then same selection motions as visual mode `i` and `a`, no cursor movement*  
+_then same selection motions as visual mode `i` and `a`, no cursor movement_
 
 `"*y`: yank selection to system clipboard  
 `"0y`: yank selection to register 0  
-`"0p`: paste register 0  
+`"0p`: paste register 0
 
 `p`: paste yanked after cursor  
-`P`: paste yanked before cursor  
+`P`: paste yanked before cursor
 
-`.`: repeat last action  
+`.`: repeat last action
 
 `J`: merge current line with line below with a space in-between  
-`gJ`: merge current line with line below  
+`gJ`: merge current line with line below
 
 `u`: undo last change  
-`CTRL+r`: redo change  
+`CTRL+r`: redo change
 
-`gd`: jump to definition (example function name to declaration)  
+`gd`: jump to definition (example function name to declaration)
 
 `[(`: jump to previous opening of (...)
 `])`: jump to closing of current (...)
@@ -139,19 +140,22 @@ etc with {...} [...] <...>
 in "/" `CTRL+r 0`: paste register value 0 in search
 
 `ma`: bookmarks cursor position as 'a'  
-\`a: jump to bookmark a at same column
-`'a`: jump to bookmark 'a'  start of line
+\`a: jump to bookmark a at same column  
+`'a`: jump to bookmark 'a' start of line  
+capital letter bookmarks across files  
 \`\` or `''`: jump between last positions  
-\`. or '.: jump to where the last editing was done  
+\`. or '.: jump to where the last editing was done
 
 `ZQ` or `:q`: close without saving  
-`ZZ`: save and close  
+`ZZ`: save and close
 
 `:%s/from/to/g`: replaces all "from" with "to" in file  
 `:%s/from/to/gc`: replaces all "from" with "to" in file with confirmation  
-`:s/from/to`: replaces all "from" with "to" in selection or line; use `n` and `.` to find next and repeat  
+`:s/from/to`: replaces all "from" with "to" in selection or line; use `n` and
+`.` to find next and repeat
 
-`cgn`: delete and edit selection then `ESC` then `n`, `.` to replace next occurrence with same command etc
+`cgn`: delete and edit selection then `ESC` then `n`, `.` to replace next
+occurrence with same command etc
 
 `:reg`: display registers
 
