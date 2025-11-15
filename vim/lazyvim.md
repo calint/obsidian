@@ -43,7 +43,6 @@
 | `<leader>uC`  | Colorschemes           | **n**        |
 |               |                        |              |
 
-
 **Search**
 `<leader>/`: start search
 `<leader>sR`: to return to same search
@@ -87,3 +86,7 @@
 
 **delete previous word in insert mode**
 `CTRL+w`
+
+**delete text prior cursor in current line in edit mode**
+`CTRL+u`
+
