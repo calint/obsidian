@@ -52,6 +52,9 @@
 `]m`: jump to next function
 `[m`: jump to previous function
 
+**Search and replace**
+select and yank, do :%s/ and there Ctrl+r" to paste yanked text from register "
+
 `<leader>sk`: key mappings
 `<leader><backspace>`: for quick help of keys that don't start with `<leader>`
 
