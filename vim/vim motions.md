@@ -171,3 +171,9 @@ occurrence with same command etc
 `CTRL+j/k/h/l`: go to window below/above/left/right
 `<leader>wd`: delete window
 `<CTRL+w+q>`: delete window
+
+Insert word under cursor in commands such as %s etc:
+`CTRL+R CTRL+w`
+
+Slect last visual selection:
+`gv`
