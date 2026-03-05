@@ -58,10 +58,10 @@
 `C`: delete rest of line and enter edit  
 `cc` or `S`: delete line and enter edit
 
-**In Insert Mode**
-`CTRL+w`: delete word before cursor
-`CTRL+u`: delete line before cursor
-`CTRL+r {register}`: insert register content
+**In Insert Mode**  
+`CTRL+w`: delete word before cursor  
+`CTRL+u`: delete line before cursor  
+`CTRL+r {register}`: insert register content  
 
 `v`: enter visual (select) mode  
 `ESC` or `CTRL+C`: exits visual mode  
@@ -80,11 +80,11 @@ _Moving cursor commands apply._
  `{` or `B`: {...}  
  `[`: [...]  
  `<`: <...>  
- `a`:function argument  
+ `a`: function argument  
  `d`: delete selection  
  `c`: delete selection and insert mode
 
-**Change**
+**Change**  
 `cina`: change next argument  
  etc much more
 
@@ -131,6 +131,8 @@ _then same selection motions as visual mode `i` and `a`, no cursor movement_
 `[(`: jump to previous opening of (...)
 `])`: jump to closing of current (...)
 etc with {...} [...] <...>
+`]a`: jump to next function argument  
+`[a`: jump to previous function argument  
 
 `*`: search for current word  
 `/`: start search forward, press ENTER to jump to occurrence  
