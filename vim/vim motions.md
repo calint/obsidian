@@ -169,12 +169,12 @@ occurrence with same command etc
 `q`: finish recording macro  
 `@a`: run macro a
 
-**Windows**
-`CTRL+j/k/h/l`: go to window below/above/left/right
-`<leader>wd` or `<CTRL+w+q>`: delete window
+**Windows**  
+`CTRL+j/k/h/l`: go to window below/above/left/right  
+`<leader>wd` or `<CTRL+w+q>`: delete window  
 
-Insert word under cursor in commands such as `%s` etc:
-`CTRL+R CTRL+w`
+Insert word under cursor in commands such as `%s` etc:  
+`CTRL+R CTRL+w`  
 
-Select last visual selection:
-`gv`
+Select last visual selection:  
+`gv`  
