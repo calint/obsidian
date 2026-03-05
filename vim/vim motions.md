@@ -42,11 +42,11 @@
 `CTRL+y`: scroll up without moving cursor  
 `CTRL+e`: scroll down without moving cursor  
 
-**Moving between buffers**
-`H`: previous buffer
-`L`: next buffer
+**Moving between buffers**  
+`H`: previous buffer  
+`L`: next buffer  
 
-**Insert**
+**Insert**  
 `i`: insert before the cursor  
 `a`: insert after the cursor  
 `I`: insert at the beginning of the line  
