@@ -37,10 +37,10 @@
 `CTRL+r`: undo undo  
 `*`: search for word under cursor  
 
-**Moving Screen**
+**Moving Screen**  
 `zz`: center screen on cursor  
 `CTRL+y`: scroll up without moving cursor  
-`CTRL+e`: scroll down without moving cursor
+`CTRL+e`: scroll down without moving cursor  
 
 **Moving between buffers**
 `H`: previous buffer
