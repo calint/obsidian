@@ -3,10 +3,6 @@
 | ------------- | ---------------------- | ------------ |
 | `gco`         | Add Comment Below      | **n**        |
 | `gcO`         | Add Comment Above      | **n**        |
-| `<leader>us`  | Toggle Spelling        | **n**        |
-| `<leader>uA`  | Toggle Tabline         | **n**        |
-| `<leader>uh`  | Toggle Inlay Hints     | **n**        |
-| `<leader>\|`  | Split Window Right     | **n**        |
 | `[b`          | Prev Buffer            | **n**        |
 | `]b`          | Next Buffer            | **n**        |
 | **Harpoon**   |                        |              |
@@ -15,6 +11,8 @@
 | `<leader>3`   | Harpoon to File 3      | **n**        |
 | `<leader>4`   | Harpoon to File 4      | **n**        |
 | `<leader>5`   | Harpoon to File 5      | **n**        |
+| `<leader>uh`  | Toggle Inlay Hints     | **n**        |
+| `<leader>\|`  | Split Window Right     | **n**        |
 | `<leader>us`  | Toggle Spelling        | **n**        |
 | `<leader>uA`  | Toggle Tabline         | **n**        |
 | `<leader>uh`  | Toggle Inlay Hints     | **n**        |
@@ -92,4 +90,3 @@ select and yank, do :%s/ and there Ctrl+r" to paste yanked text from register "
 
 **delete text prior cursor in current line in edit mode**
 `CTRL+u`
-
