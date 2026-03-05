@@ -41,52 +41,52 @@
 | `<leader>uC`  | Colorschemes           | **n**        |
 |               |                        |              |
 
-**Search**
-`<leader>/`: start search
-`<leader>sR`: to return to same search
-`CTRL+up/down`: navigate previous searchers
-`TAB`: to select entries then `CTRL+q` to send to quick fix list
-`CTRL+q`: to send all results to quick list
-`]m`: jump to next function
-`[m`: jump to previous function
+**Search**  
+`<leader>/`: start search  
+`<leader>sR`: to return to same search  
+`CTRL+up/down`: navigate previous searchers  
+`TAB`: to select entries then `CTRL+q` to send to quick fix list  
+`CTRL+q`: to send all results to quick list  
+`]m`: jump to next function  
+`[m`: jump to previous function  
 
-**Search and replace**
-select and yank, do :%s/ and there Ctrl+r" to paste yanked text from register "
+**Search and replace**  
+select and yank, do :%s/ and there Ctrl+r" to paste yanked text from register "  
 
-`<leader>sk`: key mappings
-`<leader><backspace>`: for quick help of keys that don't start with `<leader>`
+`<leader>sk`: key mappings  
+`<leader><backspace>`: for quick help of keys that don't start with `<leader>`  
 
-`>`: indent selection
-`<`: un-indent selection
+`>`: indent selection  
+`<`: un-indent selection  
 
-**Spelling**
-`z=`: suggestion
-`zg`: add to good words
+**Spelling**  
+`z=`: suggestion  
+`zg`: add to good words  
 
-**Tabs**
-`[B`: move tab left
-`]B`: move tab right
+**Tabs**  
+`[B`: move tab left  
+`]B`: move tab right  
 
-**Diagnostice**
-`]d`: next diagnostics line
-`[d`: previous diagnostics line
+**Diagnostice**  
+`]d`: next diagnostics line  
+`[d`: previous diagnostics line  
 
-**how to execute multi-line lua script**
-`<leader>.`: scratch buffer
-`:%lua`: execute buffer
+**how to execute multi-line lua script**  
+`<leader>.`: scratch buffer  
+`:%lua`: execute buffer  
 
-**folding**
-`za`: fold/unfold code
+**Folding**  
+`za`: fold/unfold code  
 
-**search and replace in multiple files**
-`<leader>+sr`
+**Search and replace in multiple files**  
+`<leader>+sr`  
 
-**mark and jump**
-`ma`: sets mark "a"
-`'a`: jump to mark "a"
+**Mark and jump**  
+`ma`: sets mark "a"  
+`'a`: jump to mark "a"  
 
-**delete previous word in insert mode**
-`CTRL+w`
+**Delete previous word in insert mode**  
+`CTRL+w`  
 
-**delete text prior cursor in current line in edit mode**
-`CTRL+u`
+**Delete text prior cursor in current line in edit mode**  
+`CTRL+u`  
