@@ -44,6 +44,7 @@
 **Search**  
 `<leader>/`: start search  
 `<leader>sR`: to return to same search  
+`CTRL+k/j`: select next/previous result  
 `CTRL+up/down`: navigate previous searchers  
 `TAB`: to select entries then `CTRL+q` to send to quick fix list  
 `CTRL+q`: to send all results to quick list  
