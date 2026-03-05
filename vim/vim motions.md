@@ -21,7 +21,7 @@
 `,`: repeat previous f, t, F or T movement, backwards  
 `ge`: jump backwards to the end of a word  
 `gE`: jump backwards to the end of a word including punctuation  
-`%`: jump to to matching character (default supported pairs: '()', '{}', '[]'  
+`%`: jump to to matching character (default supported pairs: '()', '{}', '[]')  
 `)`: jump to next sentence  
 `(`: jump to previous sentence  
 `}`: jump to next paragraph  
@@ -32,10 +32,10 @@
 `CTRL+o`: jump back in previous cursor positions  
 `CTRL+i`: jump forward in previous cursor positions  
 `CTRL+t`: jump to the file/code you were editing before the last tag jump  
-`ALT+j/k`: move selection or line up/down
-`u`: undo
-`CTRL+r`: undo undo
-`*`: search for word under cursor
+`ALT+j/k`: move selection or line up/down  
+`u`: undo  
+`CTRL+r`: undo undo  
+`*`: search for word under cursor  
 
 **Moving Screen**
 `zz`: center screen on cursor  
