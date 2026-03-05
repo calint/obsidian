@@ -5,18 +5,18 @@
 | `gcO`         | Add Comment Above      | **n**        |
 | `[b`          | Prev Buffer            | **n**        |
 | `]b`          | Next Buffer            | **n**        |
-| **Harpoon**   |                        |              |
-| `<leader>1`   | Harpoon to File 1      | **n**        |
-| `<leader>2`   | Harpoon to File 2      | **n**        |
-| `<leader>3`   | Harpoon to File 3      | **n**        |
-| `<leader>4`   | Harpoon to File 4      | **n**        |
-| `<leader>5`   | Harpoon to File 5      | **n**        |
 | `<leader>uh`  | Toggle Inlay Hints     | **n**        |
 | `<leader>\|`  | Split Window Right     | **n**        |
 | `<leader>us`  | Toggle Spelling        | **n**        |
 | `<leader>uA`  | Toggle Tabline         | **n**        |
 | `<leader>uh`  | Toggle Inlay Hints     | **n**        |
 | `<leader>\|`  | Split Window Right     | **n**        |
+| **Harpoon**   |                        |              |
+| `<leader>1`   | Harpoon to File 1      | **n**        |
+| `<leader>2`   | Harpoon to File 2      | **n**        |
+| `<leader>3`   | Harpoon to File 3      | **n**        |
+| `<leader>4`   | Harpoon to File 4      | **n**        |
+| `<leader>5`   | Harpoon to File 5      | **n**        |
 | **LSP**       |                        |              |
 | `<leader>cl`  | Lsp Info               | **n**        |
 | `gd`          | Goto Definition        | **n**        |
