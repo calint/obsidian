@@ -128,9 +128,9 @@ _then same selection motions as visual mode `i` and `a`, no cursor movement_
 
 `gd`: jump to definition (example function name to declaration)
 
-`[(`: jump to previous opening of (...)
-`])`: jump to closing of current (...)
-etc with {...} [...] <...>
+`[(`: jump to previous opening of (...)  
+`])`: jump to closing of current (...)  
+etc with {...} [...] <...>  
 `]a`: jump to next function argument  
 `[a`: jump to previous function argument  
 
