@@ -91,3 +91,9 @@ select and yank, do :%s/ and there Ctrl+r" to paste yanked text from register "
 
 **Delete text prior cursor in current line in edit mode**  
 `CTRL+u`  
+
+Display messages  
+`<leader>sna`  
+
+Display changed files  
+`<leader>gs`  
