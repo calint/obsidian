@@ -97,3 +97,5 @@ Display messages
 
 Display changed files  
 `<leader>gs`  
+switch focus `<A+w>`  
+scroll right pane up/down `<CTRL+b>/<CTRL+f>`  
